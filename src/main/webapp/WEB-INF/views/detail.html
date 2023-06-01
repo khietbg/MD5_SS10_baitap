@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+  <thead>
+  <tr>
+    <th>Name</th>
+    <th>description</th>
+    <th>Price</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr th:object="${p}">
+    <td><input th:field="*{name}"/></td>
+    <td><input th:field="*{description}"/></td>
+    <td><input th:field="*{price}"/></td>
+  </tr>
+  </tbody>
+</table>
+</body>
+</html>
